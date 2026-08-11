@@ -1,16 +1,16 @@
 document.getElementById("year").textContent = String(new Date().getFullYear());
 
 const navToggle = document.getElementById("nav-toggle");
-const navLinks = document.getElementById("nav-links");
+const nav = document.getElementById("nav");
 
 navToggle.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
+  const open = nav.classList.toggle("open");
   navToggle.setAttribute("aria-expanded", String(open));
 });
 
-navLinks.addEventListener("click", (event) => {
+nav.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
-    navLinks.classList.remove("open");
+    nav.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
   }
 });
@@ -26,9 +26,8 @@ const setFieldError = (input, message) => {
 
 const validate = () => {
   const errors = [];
-  const required = ["name", "company"];
 
-  for (const name of required) {
+  for (const name of ["name", "company"]) {
     const input = form.elements[name];
     const message = input.value.trim() ? "" : "This field is required.";
     setFieldError(input, message);
@@ -57,7 +56,9 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  const name = form.elements.name.value.trim();
+  const email = form.elements.email.value.trim();
   status.className = "form-status success";
-  status.textContent = `Thanks ${form.elements.name.value.trim()} — we'll reply to ${form.elements.email.value.trim()} within one business day.`;
+  status.textContent = `Thanks ${name} — we'll reply to ${email} within one business day.`;
   form.reset();
 });

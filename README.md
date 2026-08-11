@@ -2,11 +2,15 @@
 
 Static marketing site for Stratum.ai, a networking agency offering colocation to small businesses.
 
+Black-and-grey "rocky" visual language: slate photography, stratified rules,
+condensed display type.
+
 ## Structure
 
-- `index.html` — single-page site: hero, services, why-us, onboarding, pricing, FAQ, contact
+- `index.html` — single page: hero, services, why-us, process, pricing, FAQ, contact
 - `styles.css` — all styling (no framework, no build step)
 - `script.js` — mobile nav, client-side contact-form validation
+- `assets/` — stone photography used as section backgrounds
 
 ## Run locally
 

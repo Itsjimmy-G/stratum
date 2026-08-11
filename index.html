@@ -7,225 +7,327 @@
 <meta name="description" content="Stratum.ai is a networking agency delivering enterprise-grade colocation, connectivity and managed networking to small businesses." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="nav" id="top">
-  <div class="container nav-inner">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap utility-inner">
+    <span>Carrier-neutral facilities · Nairobi &amp; Mombasa metro</span>
+    <span class="utility-right">
+      <span class="status"><i class="pulse" aria-hidden="true"></i>All systems operational</span>
+      <a href="tel:+254700000000">+254 700 000 000</a>
+    </span>
+  </div>
+</div>
+
+<header class="masthead" id="top">
+  <div class="wrap masthead-inner">
     <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-name">Stratum<span class="dot">.ai</span></span>
+      <span class="brand-mark" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+      <span class="brand-name">STRATUM<span class="brand-suffix">.AI</span></span>
     </a>
-    <nav class="nav-links" id="nav-links">
-      <a href="#services">Services</a>
-      <a href="#why">Why Stratum</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn btn-sm" href="#contact">Get a quote</a>
+    <nav class="nav" id="nav">
+      <a href="#services">01 Services</a>
+      <a href="#bedrock">02 Bedrock</a>
+      <a href="#process">03 Process</a>
+      <a href="#pricing">04 Pricing</a>
+      <a href="#faq">05 FAQ</a>
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <a class="btn btn-sm masthead-cta" href="#contact">Get a quote</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<main>
+<main id="main">
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Colocation &amp; managed networking</p>
-        <h1>Data-center grade infrastructure, sized for small business.</h1>
-        <p class="lede">
-          Stratum.ai racks, connects and monitors your hardware in carrier-neutral facilities —
-          so you get enterprise uptime, bandwidth and security without building a server room.
-        </p>
-        <div class="hero-cta">
-          <a class="btn" href="#contact">Get a free quote</a>
-          <a class="btn btn-ghost" href="#pricing">See pricing</a>
-        </div>
-        <dl class="stats">
-          <div><dt>99.99%</dt><dd>Uptime SLA</dd></div>
-          <div><dt>24/7</dt><dd>Remote hands</dd></div>
-          <div><dt>&lt;5ms</dt><dd>Metro latency</dd></div>
-        </dl>
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="wrap hero-body">
+      <p class="kicker">Networking agency · Colocation</p>
+      <h1>
+        Put your business<br />
+        on <em>bedrock</em>.
+      </h1>
+      <p class="hero-lede">
+        Stratum.ai racks, connects and watches over your hardware in carrier-neutral
+        data centres — so a 12-person company runs on the same foundation as a bank.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Get a free quote</a>
+        <a class="link-arrow" href="#services">See what we do <span aria-hidden="true">→</span></a>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="rack">
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-          <div class="rack-unit"><span></span><span></span><span></span></div>
-        </div>
+    </div>
+    <div class="strata-bar">
+      <div class="wrap strata-grid">
+        <div><b>99.99%</b><span>Uptime SLA</span></div>
+        <div><b>24/7</b><span>Remote hands</span></div>
+        <div><b>&lt;5 ms</b><span>Metro latency</span></div>
+        <div><b>14 days</b><span>Typical install</span></div>
       </div>
     </div>
   </section>
 
-  <section class="logos">
-    <div class="container">
-      <p>Carrier-neutral facilities · Redundant power · Dual-path fiber · SOC 2 aligned processes</p>
-    </div>
-  </section>
-
+  <!-- ============ SERVICES ============ -->
   <section id="services" class="section">
-    <div class="container">
-      <p class="eyebrow center">What we do</p>
-      <h2 class="center">Services</h2>
-      <p class="section-lede center">Everything between your hardware and the internet, run by one team.</p>
-      <div class="grid grid-3">
-        <article class="card">
-          <div class="icon">◫</div>
-          <h3>Colocation</h3>
-          <p>Quarter, half and full racks in carrier-neutral data centers. Redundant A/B power, cooling, and secure caged space with badge access.</p>
+    <div class="wrap split">
+      <aside class="sticky-head">
+        <p class="kicker">01 — Services</p>
+        <h2>Everything between your&nbsp;hardware and the internet.</h2>
+        <p class="lede">One team, one invoice, one number to call. No finger-pointing between the carrier, the facility and the managed-services vendor.</p>
+        <a class="link-arrow" href="#contact">Start a project <span aria-hidden="true">→</span></a>
+      </aside>
+
+      <ol class="rows">
+        <li>
+          <span class="row-num">01</span>
+          <div>
+            <h3>Colocation</h3>
+            <p>Quarter, half and full racks in carrier-neutral facilities. Redundant A/B power, N+1 cooling, badge-and-biometric access, lockable cabinets.</p>
+          </div>
+        </li>
+        <li>
+          <span class="row-num">02</span>
+          <div>
+            <h3>Connectivity &amp; IP transit</h3>
+            <p>Blended bandwidth, BGP sessions, your own IP space or ours, plus private cross-connects to cloud on-ramps and local exchanges.</p>
+          </div>
+        </li>
+        <li>
+          <span class="row-num">03</span>
+          <div>
+            <h3>Managed networking</h3>
+            <p>Firewalls, VLAN design, site-to-site VPN and SD-WAN linking your office, branches and racks — designed, deployed and maintained.</p>
+          </div>
+        </li>
+        <li>
+          <span class="row-num">04</span>
+          <div>
+            <h3>Monitoring &amp; remote hands</h3>
+            <p>24/7 alerting on power draw, port state and reachability. On-site engineers reboot, recable and swap drives so you don't drive out at 2am.</p>
+          </div>
+        </li>
+        <li>
+          <span class="row-num">05</span>
+          <div>
+            <h3>Backup &amp; disaster recovery</h3>
+            <p>Offsite backup targets and warm standby racks in a second facility, so a fire, flood or ransomware event doesn't end the business.</p>
+          </div>
+        </li>
+        <li>
+          <span class="row-num">06</span>
+          <div>
+            <h3>Migration</h3>
+            <p>We inventory the server closet, plan the cutover, move the gear over a weekend and hand you labelled racks and clean diagrams on Monday.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ BEDROCK / WHY ============ -->
+  <section id="bedrock" class="section band">
+    <div class="wrap">
+      <p class="kicker">02 — Why Stratum</p>
+      <h2 class="band-title">Big-carrier engineering.<br />Small-business attention.</h2>
+      <div class="quad">
+        <article>
+          <h3>One team, one invoice</h3>
+          <p>Space, power, bandwidth and management arrive on a single monthly bill with no surprise line items.</p>
         </article>
-        <article class="card">
-          <div class="icon">⇄</div>
-          <h3>Connectivity &amp; IP transit</h3>
-          <p>Blended bandwidth, BGP sessions, your own IP space or ours, plus private cross-connects to cloud on-ramps.</p>
+        <article>
+          <h3>A named engineer</h3>
+          <p>You get the direct line of the person who designed your network — not a ticket queue and a rotating agent.</p>
         </article>
-        <article class="card">
-          <div class="icon">◈</div>
-          <h3>Managed networking</h3>
-          <p>Firewalls, VLAN design, site-to-site VPN and SD-WAN between your office, branches and racks — configured and maintained.</p>
+        <article>
+          <h3>No lock-in tricks</h3>
+          <p>Month-to-month is available, overage rates are published up front, and your hardware stays yours.</p>
         </article>
-        <article class="card">
-          <div class="icon">◎</div>
-          <h3>Monitoring &amp; remote hands</h3>
-          <p>24/7 alerting on power, ports and reachability. On-site techs reboot, recable and swap drives when you can't drive out.</p>
+        <article>
+          <h3>Built to grow</h3>
+          <p>Start on a quarter rack; expand into cages, second sites and dedicated transit without re-architecting.</p>
         </article>
-        <article class="card">
-          <div class="icon">⛨</div>
-          <h3>Backup &amp; DR</h3>
-          <p>Offsite backup targets and warm standby racks so a flood, fire or ransomware event doesn't end your business.</p>
-        </article>
-        <article class="card">
-          <div class="icon">↗</div>
-          <h3>Migration</h3>
-          <p>We inventory the closet, plan the cutover, move the gear on a weekend and hand you clean documentation on Monday.</p>
-        </article>
+      </div>
+      <figure class="pull-quote">
+        <blockquote>Most colocation providers are built for enterprises that already have a network team. We're built for the 5–100 person company that just needs it to work.</blockquote>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="process" class="section">
+    <div class="wrap">
+      <p class="kicker">03 — Process</p>
+      <h2>From server closet to bedrock in four layers.</h2>
+      <ol class="layers">
+        <li>
+          <p class="layer-tag">Layer 01</p>
+          <h3>Discovery</h3>
+          <p>Thirty minutes on what you run today, what's breaking, growth plans and any compliance obligations.</p>
+        </li>
+        <li>
+          <p class="layer-tag">Layer 02</p>
+          <h3>Design &amp; quote</h3>
+          <p>Rack elevation, power budget, bandwidth commit and a fixed monthly price — back to you in three business days.</p>
+        </li>
+        <li>
+          <p class="layer-tag">Layer 03</p>
+          <h3>Install</h3>
+          <p>We rack, cable, label and test. Cutovers run on weekends. Usually complete within two weeks of signature.</p>
+        </li>
+        <li>
+          <p class="layer-tag">Layer 04</p>
+          <h3>Run</h3>
+          <p>Monitoring live from day one, monthly reporting, quarterly capacity review with your named engineer.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="section band">
+    <div class="wrap">
+      <p class="kicker">04 — Pricing</p>
+      <h2 class="band-title">Published rates. No sales theatre.</h2>
+      <p class="lede band-lede">Every plan includes monitoring, remote hands and the 99.99% uptime SLA. Setup fees are waived on 12-month terms.</p>
+
+      <div class="table-scroll">
+        <table class="plans">
+          <caption class="sr-only">Colocation plan comparison</caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="th-label">Plan</span></th>
+              <th scope="col">
+                <span class="plan-name">Starter</span>
+                <span class="plan-price">$249<i>/mo</i></span>
+                <span class="plan-sub">Quarter rack · 10U</span>
+              </th>
+              <th scope="col" class="col-featured">
+                <span class="plan-flag">Most popular</span>
+                <span class="plan-name">Growth</span>
+                <span class="plan-price">$749<i>/mo</i></span>
+                <span class="plan-sub">Half rack · 22U</span>
+              </th>
+              <th scope="col">
+                <span class="plan-name">Scale</span>
+                <span class="plan-price">Custom</span>
+                <span class="plan-sub">Full rack &amp; multi-site</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Redundant power</th>
+              <td>1.5 kW</td>
+              <td class="col-featured">4 kW</td>
+              <td>Up to 10 kW</td>
+            </tr>
+            <tr>
+              <th scope="row">Bandwidth</th>
+              <td>100 Mbps blended</td>
+              <td class="col-featured">500 Mbps blended</td>
+              <td>1–10 Gbps or dedicated</td>
+            </tr>
+            <tr>
+              <th scope="row">IP allocation</th>
+              <td>1 IPv4 + /64 IPv6</td>
+              <td class="col-featured">/29 IPv4 + BGP</td>
+              <td>Bring your own ASN</td>
+            </tr>
+            <tr>
+              <th scope="row">Remote hands</th>
+              <td>Business hours</td>
+              <td class="col-featured">24/7</td>
+              <td>24/7 priority</td>
+            </tr>
+            <tr>
+              <th scope="row">Managed firewall &amp; VPN</th>
+              <td class="no">—</td>
+              <td class="col-featured yes">Included</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr>
+              <th scope="row">Cloud cross-connects</th>
+              <td class="no">—</td>
+              <td class="col-featured no">Add-on</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr>
+              <th scope="row">Warm DR site</th>
+              <td class="no">—</td>
+              <td class="col-featured no">Add-on</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr class="row-cta">
+              <td></td>
+              <td><a class="btn btn-ghost btn-block" href="#contact">Choose Starter</a></td>
+              <td class="col-featured"><a class="btn btn-block" href="#contact">Choose Growth</a></td>
+              <td><a class="btn btn-ghost btn-block" href="#contact">Request a quote</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <section id="why" class="section section-alt">
-    <div class="container two-col">
-      <div>
-        <p class="eyebrow">Why Stratum.ai</p>
-        <h2>Big-carrier engineering. Small-business attention.</h2>
-        <p class="section-lede">Most colocation providers are built for enterprises with their own network teams. We're built for the 5–100 person company that just needs it to work.</p>
-        <ul class="checks">
-          <li><strong>One team, one invoice.</strong> Space, power, bandwidth and management in a single monthly bill.</li>
-          <li><strong>Named engineer.</strong> You get a direct line to the person who designed your network, not a ticket queue.</li>
-          <li><strong>No lock-in tricks.</strong> Month-to-month available, transparent overage rates, your gear stays yours.</li>
-          <li><strong>Growth-ready.</strong> Start with a quarter rack and expand into cages and cross-connects as you scale.</li>
-        </ul>
-        <a class="btn" href="#contact">Talk to an engineer</a>
-      </div>
-      <div class="panel">
-        <h3>How onboarding works</h3>
-        <ol class="steps">
-          <li><span>1</span><div><strong>Discovery call</strong><p>30 minutes on your current setup, growth plans and compliance needs.</p></div></li>
-          <li><span>2</span><div><strong>Design &amp; quote</strong><p>Rack layout, bandwidth commit and a fixed monthly price within 3 business days.</p></div></li>
-          <li><span>3</span><div><strong>Install</strong><p>We rack, cable, label and test — usually inside two weeks of signature.</p></div></li>
-          <li><span>4</span><div><strong>Run</strong><p>Monitoring live from day one, monthly reporting, quarterly capacity review.</p></div></li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing" class="section">
-    <div class="container">
-      <p class="eyebrow center">Pricing</p>
-      <h2 class="center">Simple monthly plans</h2>
-      <p class="section-lede center">All plans include remote hands, monitoring and 99.99% uptime SLA. Setup fees waived on 12-month terms.</p>
-      <div class="grid grid-3 pricing">
-        <article class="card price-card">
-          <h3>Starter</h3>
-          <p class="price">$249<span>/mo</span></p>
-          <p class="price-sub">Quarter rack · 10U</p>
-          <ul>
-            <li>1.5 kW redundant power</li>
-            <li>100 Mbps blended bandwidth</li>
-            <li>1 public IPv4 + /64 IPv6</li>
-            <li>Business-hours remote hands</li>
-          </ul>
-          <a class="btn btn-ghost" href="#contact">Get started</a>
-        </article>
-        <article class="card price-card featured">
-          <p class="badge">Most popular</p>
-          <h3>Growth</h3>
-          <p class="price">$749<span>/mo</span></p>
-          <p class="price-sub">Half rack · 22U</p>
-          <ul>
-            <li>4 kW redundant power</li>
-            <li>500 Mbps blended bandwidth</li>
-            <li>/29 IPv4 + BGP session</li>
-            <li>24/7 remote hands</li>
-            <li>Managed firewall &amp; VPN</li>
-          </ul>
-          <a class="btn" href="#contact">Get started</a>
-        </article>
-        <article class="card price-card">
-          <h3>Scale</h3>
-          <p class="price">Custom</p>
-          <p class="price-sub">Full rack, cages &amp; multi-site</p>
-          <ul>
-            <li>Up to 10 kW per rack</li>
-            <li>1–10 Gbps or dedicated transit</li>
-            <li>Cloud cross-connects</li>
-            <li>Warm DR site</li>
-            <li>Named solutions engineer</li>
-          </ul>
-          <a class="btn btn-ghost" href="#contact">Request a quote</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq" class="section section-alt">
-    <div class="container narrow">
-      <p class="eyebrow center">FAQ</p>
-      <h2 class="center">Questions we get a lot</h2>
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section">
+    <div class="wrap split">
+      <aside class="sticky-head">
+        <p class="kicker">05 — FAQ</p>
+        <h2>Questions we get on every first call.</h2>
+        <p class="lede">Something not covered here? Mail <a href="mailto:hello@stratum.ai">hello@stratum.ai</a> and an engineer replies — not a bot.</p>
+      </aside>
       <div class="faq">
         <details>
           <summary>Do I need to own my own servers?</summary>
-          <p>No. You can bring existing hardware, or we can source and rack refurbished or new equipment sized to your workload and budget.</p>
+          <p>No. Bring existing hardware, or we source and rack new or refurbished equipment sized to your workload and budget.</p>
         </details>
         <details>
           <summary>How is this different from just using the cloud?</summary>
-          <p>For steady, predictable workloads — file servers, ERP, databases, video archives — owning the hardware and colocating it is typically 40–60% cheaper over three years. Many clients run a hybrid: colo for the baseline, cloud for bursts.</p>
+          <p>For steady, predictable workloads — file servers, ERP, databases, video archives — owning the hardware and colocating it typically costs 40–60% less over three years. Most clients run a hybrid: colo for the baseline, cloud for bursts.</p>
         </details>
         <details>
           <summary>What happens if something fails at 2am?</summary>
-          <p>Our monitoring alerts our on-call engineer before you notice. Remote hands are on site 24/7 for reboots, recabling and drive swaps, and you get an incident summary the next morning.</p>
+          <p>Monitoring pages our on-call engineer before you notice. Remote hands are on site around the clock for reboots, recabling and drive swaps, and you get an incident summary the next morning.</p>
         </details>
         <details>
           <summary>Can you help us pass a security audit?</summary>
-          <p>Yes. We provide facility attestations, access logs, network diagrams and change records that map to common SOC 2, HIPAA and PCI control requirements.</p>
+          <p>Yes. We supply facility attestations, access logs, network diagrams and change records that map to common SOC 2, HIPAA and PCI control requirements.</p>
         </details>
         <details>
           <summary>What are the contract terms?</summary>
-          <p>Month-to-month, 12-month and 36-month terms are available. Longer terms waive setup fees and lock your rate.</p>
+          <p>Month-to-month, 12-month and 36-month terms. Longer terms waive setup fees and lock your rate for the duration.</p>
+        </details>
+        <details>
+          <summary>Can we visit our hardware?</summary>
+          <p>Any time, with 24 hours' notice for badge provisioning. Escorted access is available same-day for emergencies.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container two-col">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Get a free colocation quote</h2>
-        <p class="section-lede">Tell us what you're running today. We'll come back within one business day with a rack design and a fixed monthly price.</p>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <p class="kicker">06 — Contact</p>
+        <h2>Tell us what you're running today.</h2>
+        <p class="lede">We come back within one business day with a rack design, a bandwidth recommendation and a fixed monthly price.</p>
         <ul class="contact-list">
-          <li><strong>Email</strong><a href="mailto:hello@stratum.ai">hello@stratum.ai</a></li>
-          <li><strong>Sales</strong><a href="tel:+18005550142">+1 (800) 555-0142</a></li>
-          <li><strong>NOC (24/7)</strong><a href="mailto:noc@stratum.ai">noc@stratum.ai</a></li>
+          <li><span>General</span><a href="mailto:hello@stratum.ai">hello@stratum.ai</a></li>
+          <li><span>Sales</span><a href="tel:+254700000000">+254 700 000 000</a></li>
+          <li><span>NOC · 24/7</span><a href="mailto:noc@stratum.ai">noc@stratum.ai</a></li>
         </ul>
       </div>
-      <form class="panel form" id="quote-form" novalidate>
+
+      <form class="form" id="quote-form" novalidate>
         <div class="field">
           <label for="name">Full name</label>
           <input id="name" name="name" type="text" autocomplete="name" required />
@@ -246,13 +348,13 @@
           <select id="plan" name="plan">
             <option>Starter — quarter rack</option>
             <option selected>Growth — half rack</option>
-            <option>Scale — full rack / custom</option>
+            <option>Scale — full rack / multi-site</option>
             <option>Not sure yet</option>
           </select>
         </div>
         <div class="field">
           <label for="message">What are you running today?</label>
-          <textarea id="message" name="message" rows="4" placeholder="e.g. 3 Dell servers and a NAS in a closet, 40 staff, need better uplink"></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="e.g. 3 Dell servers and a NAS in a closet, 40 staff, uplink keeps dropping"></textarea>
         </div>
         <button class="btn btn-block" type="submit">Request quote</button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
@@ -262,23 +364,23 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">Stratum<span class="dot">.ai</span></span>
-      </a>
-      <p class="muted">Networking agency &amp; colocation for small business.</p>
-    </div>
-    <nav>
+  <div class="wrap footer-top">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-name">STRATUM<span class="brand-suffix">.AI</span></span>
+    </a>
+    <nav class="footer-nav">
       <a href="#services">Services</a>
+      <a href="#bedrock">Why Stratum</a>
+      <a href="#process">Process</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
-  <div class="container">
-    <p class="muted small">© <span id="year"></span> Stratum.ai. All rights reserved.</p>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> Stratum.ai — networking agency &amp; colocation for small business.</p>
+    <p>Built on bedrock.</p>
   </div>
 </footer>
 
