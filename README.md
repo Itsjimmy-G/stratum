@@ -1,7 +1,5 @@
 # Stratum.ai 
 Static marketing site for Stratum.ai, a networking agency offering colocation to small businesses.
-
-
 Black-and-grey visual language: slate photography, stratified rules,
 condensed display type.
 
